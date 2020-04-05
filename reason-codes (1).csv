@@ -1,0 +1,58 @@
+DAI Model,Validation RMSE,Test RMSE,Accuracy,Time,Interpretability,Training Duration
+tobegowo (521dc4de-76ee-11ea-8035-0242ac110002),369.40073,N/A,7,2,8,00:25:50
+Surrogate Model,RMSE (Train),R2 (Train),RMSE (Mean 3 Fold CV),R2 (Mean 3 Fold CV),Training Duration,Training Num. Obs.,Cluster Centers in order of 1/22/20, 3/31/20
+LIME Global GLM,317.2597,0.95,380.8358,0.92,00:00:00,259,NA
+  Cluster GLM cluster3 ,317.2597,0.95,380.8358,0.92,00:00:00,259 (Global GLM used for cluster3),[0.000, 3054]
+  Cluster GLM cluster2 ,317.2597,0.95,380.8358,0.92,00:00:00,259 (Global GLM used for cluster2),[0.000, 8464]
+  Cluster GLM cluster1 ,317.2597,0.95,380.8358,0.92,00:00:00,259 (Global GLM used for cluster1),[0.000, 1.243e+4]
+  Cluster GLM cluster0 ,26.3371,0.97,33.7917,0.96,00:00:00,252,[0.000, 23.59]
+Decision Tree,1147.2783,0.31,1266.799,0.16,00:00:00,259,NA
+Random Forest,1049.9914,0.42,1173.7957,0.28,00:00:02,259,NA
+1/30/20,Mean Prediction,Std.Dev Prediction,Maximum Prediction,Minimum Prediction
+0,237.03647,1390.34595,14566.47363,10.11891
+1,17.59085,4.20336,24.70392,13.54614
+2,34.8261,10.08169,41.95493,27.69727
+162,3344.14404,NaN,3344.14404,3344.14404
+1/30/20,Mean Prediction Disparity,Std.Dev Prediction Disparity,Maximum Prediction Disparity,Minimum Prediction Disparity,R2 Disparity,RMSE Disparity
+0,1,1,1,1,1,1
+1,0.07421,0.00302,0.0017,1.3387,0.78168,0.06067
+2,0.14692,0.00725,0.00288,2.73718,1.01764,0.08824
+162,14.10814,NaN,0.22958,330.48474,0,0.69057
+1/30/20,Mean Prediction Parity,Std.Dev Prediction Parity,Maximum Prediction Parity,Minimum Prediction Parity,R2 Parity,RMSE Parity,Overall Fairness
+0,True,True,True,True,True,True,True
+1,False,False,False,False,False,False,False
+2,False,False,False,False,True,False,False
+162,False,False,False,False,False,False,False
+all,False,False,False,False,False,False,False
+1/30/20,Mean Prediction,Std.Dev Prediction,Maximum Prediction,Minimum Prediction
+0,237.03647,1390.34595,14566.47363,10.11891
+1,17.59085,4.20336,24.70392,13.54614
+2,34.8261,10.08169,41.95493,27.69727
+162,3344.14404,NaN,3344.14404,3344.14404
+1/30/20,Mean Prediction Disparity,Std.Dev Prediction Disparity,Maximum Prediction Disparity,Minimum Prediction Disparity,R2 Disparity,RMSE Disparity
+0,1,1,1,1,1,1
+1,0.07421,0.00302,0.0017,1.3387,0.78168,0.06067
+2,0.14692,0.00725,0.00288,2.73718,1.01764,0.08824
+162,14.10814,NaN,0.22958,330.48474,0,0.69057
+1/30/20,Mean Prediction Parity,Std.Dev Prediction Parity,Maximum Prediction Parity,Minimum Prediction Parity,R2 Parity,RMSE Parity,Overall Fairness
+0,True,True,True,True,True,True,True
+1,False,False,False,False,False,False,False
+2,False,False,False,False,True,False,False
+162,False,False,False,False,False,False,False
+all,False,False,False,False,False,False,False
+DATA,SCORE,VARIABLE
+,[ID],[TARGET],[PREDICTIONS],[RESIDUALS],3/31/20,Province/State,Country/Region,Lat,Long,1/22/20
+,Summary,0,243.23556,32.39118,163,Alberta,China,21.36702,22.52973,0
+,0,7,15.79675,-8.79675,4,,Afghanistan,33,65,0
+,1,20,29.71604,-9.71604,15,,Albania,41.1533,20.1683,0
+,2,130,94.49649,35.50351,44,,Algeria,28.0339,1.6596,0
+,3,17,27.69727,-10.69727,12,,Andorra,42.5063,1.5218,0
+,4,2,12.19096,-10.19096,2,,Angola,-11.2027,17.8739,0
+Global Reason Codes
+Global interpretable model explains 94.71% in predicted 4/4/20 for the entire dataset with RMSE = 317.260
+,Variable,with value/1 unit increase (if blank),is associated predicted 4/4/20,
+Top Positive Global Attributions
+,1/22/20,0,increase of,3.9
+,3/31/20,,increase of,1.3
+Top Negative Global Attributions
+,1/22/20,17,decrease of,900

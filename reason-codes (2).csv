@@ -1,0 +1,121 @@
+DAI Model,Validation RMSE,Test RMSE,Accuracy,Time,Interpretability,Training Duration
+gevegedo (3eac2bb4-76f5-11ea-8035-0242ac110002),2336.55762,N/A,7,2,8,00:28:17
+Surrogate Model,RMSE (Train),R2 (Train),RMSE (Mean 3 Fold CV),R2 (Mean 3 Fold CV),Training Duration,Training Num. Obs.,Cluster Centers in order of 3/24/20, 3/28/20, 3/29/20, 3/30/20, 3/31/20, 4/1/20
+LIME Global GLM,257.9310,1.00,6431.5820,-0.42,00:00:00,245,NA
+  Cluster GLM cluster1 ,257.9310,1.00,6431.5820,0.00,00:00:00,245 (Global GLM used for cluster1),[6.032e+4, 6.210e+4, 6.257e+4, 6.289e+4, 6.315e+4, 6.333e+4]
+  Cluster GLM cluster0 ,100.0504,1.00,678.2523,0.96,00:00:00,244,[195.4, 316.9, 354.6, 416.7, 470.8, 532.2]
+Decision Tree,4444.5221,0.32,4852.225,0.19,00:00:00,245,NA
+Random Forest,3387.1620,0.61,4203.4211,0.39,00:00:06,245,NA
+DATA,SCORE,VARIABLE
+,[ID],[TARGET],[PREDICTIONS],[RESIDUALS],3/31/20,3/30/20,4/1/20,3/26/20,3/29/20,3/20/20
+,Summary,0,995.58384,41.51946,727,672,788,499,608,0
+,0,10,0.00000,10.00000,5,2,5,2,2,1
+,1,99,78.53287,20.46713,52,44,67,17,33,0
+,2,90,74.82545,15.17455,46,37,61,29,31,32
+,3,21,20.92913,0.07087,10,10,10,1,1,1
+,4,2,1.67873,0.32127,1,0,1,0,0,0
+Global Reason Codes
+Global interpretable model explains 99.77% in predicted 4/4/20 for the entire dataset with RMSE = 257.931
+,Variable,with value/1 unit increase (if blank),is associated predicted 4/4/20,
+Top Positive Global Attributions
+,2/6/20,817,increase of,23000
+,2/5/20,633,increase of,3700
+,2/6/20,69,increase of,1700
+,2/6/20,94,increase of,1100
+,2/6/20,56,increase of,470
+,2/6/20,81,increase of,390
+,2/6/20,37,increase of,330
+,2/6/20,34,increase of,310
+,2/5/20,49,increase of,250
+,2/6/20,27,increase of,230
+,2/5/20,78,increase of,170
+,2/3/20,386,increase of,160
+,2/6/20,24,increase of,140
+,2/5/20,47,increase of,100
+,2/5/20,7,increase of,100
+,2/5/20,54,increase of,77
+,2/5/20,27,increase of,69
+,2/5/20,9,increase of,54
+,2/6/20,13,increase of,50
+,2/6/20,8,increase of,39
+,2/6/20,31,increase of,36
+,2/3/20,5,increase of,36
+,2/2/20,5,increase of,32
+,2/5/20,23,increase of,32
+,2/5/20,15,increase of,30
+,2/3/20,14,increase of,29
+,2/4/20,20,increase of,28
+,2/5/20,1,increase of,27
+,1/28/20,2,increase of,25
+,2/3/20,12,increase of,24
+,2/6/20,25,increase of,21
+,2/3/20,1,increase of,18
+,2/4/20,4,increase of,18
+,1/29/20,2,increase of,15
+,2/3/20,21,increase of,14
+,2/1/20,5,increase of,13
+,1/25/20,1,increase of,13
+,2/3/20,43,increase of,9.6
+,2/4/20,11,increase of,9.1
+,2/5/20,11,increase of,8.7
+,2/6/20,14,increase of,8.6
+,2/2/20,7,increase of,7.9
+,1/31/20,1,increase of,7.6
+,2/5/20,24,increase of,6.8
+,2/3/20,7,increase of,6.6
+,2/4/20,2,increase of,6.6
+,2/3/20,16,increase of,5.2
+,1/31/20,3,increase of,5
+,1/30/20,1,increase of,4.9
+,1/29/20,4,increase of,4.3
+Top Negative Global Attributions
+,2/6/20,0,decrease of,150
+,2/6/20,1,decrease of,140
+,2/6/20,3,decrease of,130
+,2/6/20,6,decrease of,81
+,2/3/20,4,decrease of,79
+,2/3/20,8,decrease of,73
+,2/6/20,7,decrease of,69
+,2/6/20,4,decrease of,67
+,2/6/20,2,decrease of,58
+,2/6/20,12,decrease of,51
+,2/5/20,4,decrease of,49
+,2/4/20,14,decrease of,46
+,1/28/20,1,decrease of,41
+,2/2/20,1,decrease of,26
+,2/2/20,12,decrease of,24
+,2/3/20,2,decrease of,24
+,2/6/20,5,decrease of,24
+,1/30/20,2,decrease of,18
+,2/2/20,2,decrease of,17
+,2/3/20,10,decrease of,17
+,2/1/20,1,decrease of,16
+,2/5/20,6,decrease of,15
+,2/4/20,1,decrease of,15
+,2/1/20,6,decrease of,14
+,2/4/20,3,decrease of,12
+,2/5/20,5,decrease of,12
+,2/5/20,3,decrease of,12
+,2/3/20,3,decrease of,12
+,2/2/20,3,decrease of,11
+,2/2/20,4,decrease of,10
+,2/4/20,10,decrease of,8.8
+,2/4/20,12,decrease of,7.6
+,2/2/20,11,decrease of,7
+,2/6/20,9,decrease of,5.8
+,1/31/20,2,decrease of,5.8
+,1/27/20,1,decrease of,3.3
+,1/28/20,5,decrease of,3.3
+,2/1/20,2,decrease of,3.3
+,1/31/20,5,decrease of,3
+,2/1/20,3,decrease of,2.8
+,2/4/20,5,decrease of,2.5
+,1/29/20,5,decrease of,2.1
+,1/31/20,7,decrease of,1.8
+,2/1/20,9,decrease of,1.8
+,1/30/20,5,decrease of,0.79
+,1/27/20,4,decrease of,0.71
+,2/7/20,,decrease of,0.65
+,3/22/20,,decrease of,0.64
+,2/5/20,0,decrease of,0.59
+,1/25/20,2,decrease of,0.57

@@ -1,0 +1,33 @@
+DAI Model,Validation RMSE,Test RMSE,Accuracy,Time,Interpretability,Training Duration
+kapekatu (933dd1a0-76e1-11ea-b707-0242ac110002),10542.14453,N/A,7,2,8,00:22:06
+Surrogate Model,RMSE (Train),R2 (Train),RMSE (Mean 3 Fold CV),R2 (Mean 3 Fold CV),Training Duration,Training Num. Obs.,Cluster Centers in order of 1/22/20, 3/30/20
+LIME Global GLM,3967.4960,0.92,6958.6436,0.75,00:00:00,259,NA
+  Cluster GLM cluster1 ,3967.4960,0.92,6958.6436,0.75,00:00:00,259 (Global GLM used for cluster1),[0.000, 9.724e+4]
+  Cluster GLM cluster0 ,1336.5243,0.93,1703.2296,0.88,00:00:00,254,[0.000, 1166]
+Decision Tree,10003.4633,0.48,11631.796,0.29,00:00:00,259,NA
+Random Forest,8657.3501,0.61,10774.7656,0.39,00:00:01,259,NA
+DATA,SCORE,VARIABLE
+,[ID],[TARGET],[PREDICTIONS],[RESIDUALS],3/30/20,Province/State,Country/Region,Lat,Long,1/22/20
+,Summary,10,3291.80785,1613.83343,3021,Alberta,China,21.36702,22.52973,0
+,210,41,61.11532,-20.11532,30,,Togo,8.6195,0.8248,0
+,211,103,109.49594,-6.49594,82,,Trinidad and Tobago,10.6918,-61.2225,0
+,212,553,482.85495,70.14505,312,,Tunisia,34,9,0
+,213,23934,17626.13477,6307.86523,10827,,Turkey,38.9637,35.2433,0
+,214,48,61.11532,-13.11532,33,,Uganda,1,32,0
+Global Reason Codes
+Global interpretable model explains 91.76% in predicted 4/4/20 for the entire dataset with RMSE = 3967.496
+,Variable,with value/1 unit increase (if blank),is associated predicted 4/4/20,
+Top Positive Global Attributions
+,1/22/20,444,increase of,36000
+,1/22/20,0,increase of,57
+,1/22/20,10,increase of,30
+,3/30/20,,increase of,0.85
+Top Negative Global Attributions
+,1/22/20,1,decrease of,3900
+,1/22/20,4,decrease of,550
+,1/22/20,9,decrease of,550
+,1/22/20,6,decrease of,490
+,1/22/20,14,decrease of,490
+,1/22/20,2,decrease of,290
+,1/22/20,5,decrease of,230
+,1/22/20,26,decrease of,57
